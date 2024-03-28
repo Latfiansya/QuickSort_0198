@@ -86,3 +86,18 @@ void q_short(int low, int high)
 	//
 	q_short(j + 1, high); // step 13
 }
+
+void display()
+{
+	cout << "\n-------------------------\n";
+	cout << "Array yang telah tersusun\n";
+	cout << "-------------------------\n";
+
+	for (int i = 0; i < n; i++)
+	{
+		cout << arr[i] << " ";
+	}
+
+	cout << "\n\nAngka yang dibandingkan : " << cmp_count << endl;
+	cout << "Angka yang dipindah : " << mov_count << endl;
+}
